@@ -5,11 +5,11 @@
     --link-color: #c410cd;
 }
 
-
 body { 
-  font-family: "Kalnia", serif;
+    font-family: "Kalnia", serif;
+    background-color: var(--background-color);
+    color: var(--dark-color);
 }
-
 
 main {
     position: relative;
@@ -23,26 +23,30 @@ main {
 }
 
 #head h3 a {
-    color: var(--dark-color) 
+    color: var(--dark-color);
     text-decoration: none;
 }
 
-/*out post class */
+/* post class */
 .post {
-    border: 1px solid var(--link-color)
+    border: 1px solid var(--link-color);
     margin-bottom: 1em;
-    padding: .5em 1em;
-    img {
-        width: 100%
-        height: auto
-        display: block;
-    }
+    padding: 0.5em 1em;
 }
- a {
-    color: var(--link-color)
-    background-color: var(--light-color)
+
+/* Post image styles */
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--link-color);
+    background-color: var(--light-color);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -51,15 +55,18 @@ a:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
+
 .special-headline {
     font-weight: 900;
     color: #c410cd;
+    text-align: center;
 }
 
 #unique-headline {
     font-weight: 600;
     color: #ff1493;
-    border: 1px solid var(--link-color)
+    border: 1px solid var(--link-color);
     margin-bottom: 1em;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
+    text-align: right;
 }
